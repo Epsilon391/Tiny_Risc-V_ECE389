@@ -1,0 +1,45 @@
+module reg_file( 
+ input clk,
+ input rst,
+ input wren,
+ input [4:0]addr_in,
+ input [31:0]rf_data_in,
+ input [4:0]addr_out1,
+ input [4:0]addr_out2,
+ output reg [31:0]rf_out1,
+ output reg [31:0]rf_out2
+);      
+      
+reg [31:0]  regFile [0:15]; 
+integer i; 
+
+always @ (posedge clk or negedge rst) 
+begin 
+  if (rst == 1) //If at reset 
+  begin 
+    for (i = 0; i < 32; i = i + 1) 
+	 begin
+      regFile [i] = 32'h0; 
+    end 
+    rf_out1 = 32'hx; 
+  end 
+  else //If not at reset 
+  begin 
+    case (wren) 
+      1'b0:  
+		begin 
+        regFile [addr_in] = rf_data_in; 
+      end   
+      1'b1:  
+	   begin //If both active 
+		  rf_out1 = regFile [addr_out1]; 
+        rf_out2 = regFile [addr_out2]; 
+        regFile [addr_in] = rf_data_in; 
+      end 
+      default: 
+		begin //If undefined 
+      end 
+    endcase  
+  end 
+end
+endmodule
