@@ -26,3 +26,6 @@ Contains output pin encoding, as well as a breakdown of two basic programs. The 
 
 ### program.txt
 Contains the two programs converted to decimal, which allows them to be copied and pasted into program.mif.
+
+## Demo
+https://www.youtube.com/watch?v=28wfCCe0jlk
