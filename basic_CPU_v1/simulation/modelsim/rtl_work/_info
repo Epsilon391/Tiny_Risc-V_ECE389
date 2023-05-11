@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/projects289/basic_CPU/simulation/modelsim
+vALU
+Z1 !s110 1683635347
+!i10b 1
+!s100 Ed>45S45LR`V9I4OkHa=b1
+I_o??<1jh]IOknlnYjHCOD0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1683585149
+8C:/intelFPGA_lite/projects289/basic_CPU/ALU.v
+FC:/intelFPGA_lite/projects289/basic_CPU/ALU.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1683635347.000000
+!s107 C:/intelFPGA_lite/projects289/basic_CPU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/projects289/basic_CPU|C:/intelFPGA_lite/projects289/basic_CPU/ALU.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/projects289/basic_CPU
+Z7 tCvgOpt 0
+n@a@l@u
+vreg_file
+R1
+!i10b 1
+!s100 CbDIROT4Kjm8C2gN98nhS1
+I133A4k`<K@@4iCE?H`K^J2
+R2
+R0
+w1683578690
+8C:/intelFPGA_lite/projects289/basic_CPU/reg_file.v
+FC:/intelFPGA_lite/projects289/basic_CPU/reg_file.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/projects289/basic_CPU/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/projects289/basic_CPU|C:/intelFPGA_lite/projects289/basic_CPU/reg_file.v|
+!i113 1
+R5
+R6
+R7

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 11 13:33:17 2023
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : cpu_ctrl
+Top-level Entity Name : cpu_ctrl
+Family : Cyclone IV E
+Total logic elements : 4,479
+    Total combinational functions : 3,487
+    Dedicated logic registers : 1,132
+Total registers : 1132
+Total pins : 87
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 0

@@ -1,0 +1,66 @@
+# Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
+# do cpu_ctrl_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/projects289/basic_CPU {C:/intelFPGA_lite/projects289/basic_CPU/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:29:07 on May 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/projects289/basic_CPU" C:/intelFPGA_lite/projects289/basic_CPU/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 08:29:07 on May 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/projects289/basic_CPU {C:/intelFPGA_lite/projects289/basic_CPU/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:29:07 on May 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/projects289/basic_CPU" C:/intelFPGA_lite/projects289/basic_CPU/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 08:29:07 on May 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/projects289/basic_CPU {C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:29:07 on May 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/projects289/basic_CPU" C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v 
+# -- Compiling module cpu_ctrl
+# ** Error: C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(18): (vlog-2730) Undefined variable: 'reg_data_in'.
+# ** Error: C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(22): (vlog-2730) Undefined variable: 'PC'.
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(41): (vlog-2388) 'alu_in1' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(42): (vlog-2388) 'alu_in2' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(43): (vlog-2388) 'alu_ctrl' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(44): (vlog-2388) 'comp' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(45): (vlog-2388) 'alu_result' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(62): (vlog-2388) 'mem_data_in' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(63): (vlog-2388) 'mem_wen' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(64): (vlog-2388) 'mem_addr' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(65): (vlog-2388) 'mem_out' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(81): (vlog-2388) 'prog_data_in' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(82): (vlog-2388) 'prog_wen' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(83): (vlog-2388) 'PC' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(84): (vlog-2388) 'instr' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(110): (vlog-2388) 'reg_wen' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(111): (vlog-2388) 'reg_store_addr' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(112): (vlog-2388) 'reg_data_in' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(113): (vlog-2388) 'reg_read_addr1' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(114): (vlog-2388) 'reg_read_addr2' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(115): (vlog-2388) 'reg_data_out1' already declared in this scope (cpu_ctrl).
+# ** Error (suppressible): C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v(116): (vlog-2388) 'reg_data_out2' already declared in this scope (cpu_ctrl).
+# End time: 08:29:07 on May 09,2023, Elapsed time: 0:00:00
+# Errors: 22, Warnings: 0
+# ** Error: C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./cpu_ctrl_run_msim_rtl_verilog.do line 10
+# C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/projects289/basic_CPU {C:/intelFPGA_lite/projects289/basic_CPU/cpu_ctrl.v}"

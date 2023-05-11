@@ -1,0 +1,107 @@
+module ALU(
+input clk,
+input rst,
+input [31:0]inA,
+input [31:0]inB,
+input [4:0]alu_control,
+output reg comp,
+output reg[31:0]result);
+
+
+
+always @(posedge clk, negedge rst)
+begin
+	if (rst == 1'b0)
+	begin
+		result = 32'h0;
+		comp = 1'b0;
+	end
+	else
+		case (alu_control)
+			5'h0: result = inA+inB;	//add,sub,mul
+			5'h1: result = inA-inB;
+			5'h2: result = inA*inB;
+			5'h3: result = inA&inB;	//bitwise and,or,xor
+			5'h4: result = inA|inB;
+			5'h5: result = inA^inB;
+			5'h6: 								//SLT
+			begin
+				if (inA[31] == inB[31])		//A and B have matching signs
+				begin
+					if (inA<inB)
+					begin
+						result = 32'h1;
+						comp = 32'h1;
+					end
+					else
+					begin
+						result = 32'h0;
+						comp = 32'h0;
+					end
+				end
+				else if (inA[31] > inB[31])	//A is - and B is +
+				begin
+					result = 32'h1;
+					comp = 32'h1;
+				end
+				else									//A is + and B is -
+				begin
+					result = 32'h0;
+					comp = 32'h0;
+				end
+			end
+			5'h7:										//SLTU
+			begin
+				if (inA<inB)
+				begin
+					result = 32'h1;
+					comp = 32'h1;
+				end
+				else
+				begin
+					result = 32'h0;
+					comp = 32'h0;
+				end
+			end
+			5'h8: result = inA >>> inB;	//SRA
+			5'h9: result = inA >> inB;		//SRL
+			5'd10: result = inA <&lt inB;	//SLL
+			5'd11: result = inB << 10'd12;	//LUI
+			5'd12: comp = (inA == inB);	//EQ
+			5'd13: comp = (inA != inB);	//NE
+			5'd14:								//GTEU
+			begin
+				if (inA>=inB)
+				begin
+					comp = 32'h1;
+				end
+				else
+				begin
+					comp = 32'h0;
+				end
+			end
+			5'd15:								//GTE
+			begin
+				if (inA[31] == inB[31])		//A and B have matching signs
+				begin
+					if (inA>=inB)
+					begin
+						comp = 32'h1;
+					end
+					else
+					begin
+						comp = 32'h0;
+					end
+				end
+				else if (inA[31] < inB[31])	//A is + and B is -
+				begin
+					comp = 32'h1;
+				end
+				else									//A is - and B is +
+				begin
+					comp = 32'h0;
+				end
+			end
+	endcase
+end
+endmodule

@@ -1,0 +1,17 @@
+`timescale 1 ps / 1 ps
+
+module tb;
+	reg clk;
+	reg rst;
+	
+	
+	
+	
+	
+	integer i;
+	parameter simdelay = 10;
+	
+	cpu_ctrl DUT(																				
+										.clk(clk),
+										.rst(rst),
+										);

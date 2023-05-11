@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at reg_file.v(16): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/projects289/basic_CPU/reg_file.v Line: 16
